@@ -48,15 +48,16 @@ public class BaseClass {
 		 //this driver have scope
 		 
 		 String urlName=prop.getProperty("url");
-		 driver.get(urlName);	    
+		 driver.get(urlName);
+		 driver.manage().window().maximize();
 	}
-	
+/*	
     @AfterMethod
     public void closeBrowser() {
      driver.quit();
 	
 		}
-    
+  */  
 }
 	
 

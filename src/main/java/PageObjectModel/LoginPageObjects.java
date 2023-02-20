@@ -15,9 +15,15 @@ public class LoginPageObjects {
 	private By password=By.xpath("//input[@id='password']");
 	private By login=By.xpath("//input[@id='Login']");
 	private By TryForFree=By.xpath("//a[@id='signup_link']");
-	
-		public LoginPageObjects(WebDriver driver2) {
+	private By errormessage=By.xpath("//div[@id='error']");
+		
+	public LoginPageObjects(WebDriver driver2) {
 	     this.driver=driver2;
+	}
+	
+	public String getCurrentUrl() {
+		
+		return driver.getCurrentUrl();
 	}
 
 
@@ -42,6 +48,11 @@ public class LoginPageObjects {
         public WebElement clickOnTryForFree() {
 			
 			return driver.findElement(TryForFree);
+		}
+        
+        public WebElement errorText() {
+			
+			return driver.findElement(errormessage);
 		}
 	
 	}
