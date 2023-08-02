@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 8.884 s <<< FAILURE! - in TestSuite
+TestCases.verifyLoginPage.openurl  Time elapsed: 7.849 s  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.IllegalArgumentException: Unknown HttpClient factory jdk-http-client
+
+TestCases.VerifySignupPage.openurl  Time elapsed: 0.351 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder
+

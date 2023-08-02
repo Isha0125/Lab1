@@ -11,11 +11,10 @@ public class LoginPageObjects {
 	//this driver don't have scope
 	public WebDriver driver;
 	
-	private By username=By.xpath("//input[@id='username']");
+	private By username=By.xpath("//input[@id='user-name']");
 	private By password=By.xpath("//input[@id='password']");
-	private By login=By.xpath("//input[@id='Login']");
-	private By TryForFree=By.xpath("//a[@id='signup_link']");
-	private By errormessage=By.xpath("//div[@id='error']");
+	private By login=By.xpath("//input[@id='login-button']");
+	
 		
 	public LoginPageObjects(WebDriver driver2) {
 	     this.driver=driver2;
@@ -45,14 +44,5 @@ public class LoginPageObjects {
 		}
 	
 	    
-        public WebElement clickOnTryForFree() {
-			
-			return driver.findElement(TryForFree);
-		}
-        
-        public WebElement errorText() {
-			
-			return driver.findElement(errormessage);
-		}
-	
+      
 	}
