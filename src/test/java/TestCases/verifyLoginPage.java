@@ -1,7 +1,5 @@
 package TestCases;
 
-
-
 import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -9,14 +7,9 @@ import org.testng.asserts.SoftAssert;
 
 import PageObjectModel.LoginPageObjects;
 import Resources.BaseClass;
-
 import Resources.Constants;
 
-
 public class verifyLoginPage extends BaseClass{
-	
-	
-	
 	@Test(dataProvider="testData")
 	public void login(String uname,String password) {
 	      
